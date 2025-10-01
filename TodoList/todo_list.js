@@ -37,3 +37,9 @@ function clearCompletedTasks() {
 
 addTaskBtn.addEventListener("click",addTask);
 clearCompletedBtn.addEventListener("click",clearCompletedTasks);
+
+const effacerBtn = document.getElementById('effacherTous');
+effacerBtn.addEventListener("click",()=> {
+    tasks = "";
+    displayTasks();
+});
